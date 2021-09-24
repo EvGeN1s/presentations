@@ -16,7 +16,7 @@ export type EditorState = {
 
 // Presentation
 
-type Presentation = {
+export type Presentation = {
     name: string,
     id: string,
     slides: Slide[]
