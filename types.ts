@@ -28,7 +28,7 @@ type PresentationId = number;
 
 // Slide
 
-type Slide = {
+export type Slide = {
     background: string,
     id: string,
     contentCollection: Content[]
@@ -37,7 +37,7 @@ type Slide = {
 
 // Content
 
-type Content = {
+export type Content = {
     x: number,
     y: number,
     w: number,
@@ -48,9 +48,9 @@ type Content = {
     border: Border
 }
 
-type ContentType = Text | Ellipse | Rect | Triangle | Img;
+export type ContentType = Text | Ellipse | Rect | Triangle | Img;
 
-type Border = {
+export type Border = {
     color: Color,
     size: number
 }
@@ -92,6 +92,6 @@ type SlideId = string;
 
 type ContentId = string;
 
-type Color = 'red' | 'greed' | 'blue';
+export type Color = 'red' | 'greed' | 'blue';
 
 type FontFamily = 'Verdana' | 'Times New Roman';
